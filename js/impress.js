@@ -201,7 +201,7 @@
         width: 1024,
         height: 768,
         maxScale: 1,
-        minScale: 0,
+        minScale: 1,
         
         perspective: 1000,
         

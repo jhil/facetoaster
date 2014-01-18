@@ -80,6 +80,8 @@ h3,
 }
 .logo-name:before {
   content: url("/img/logo-mini.png");
+  margin-right: 10px;
+  margin-bottom: -20px;
 }
 .header-text {
   margin: 15px 0;
