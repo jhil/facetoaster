@@ -506,7 +506,7 @@ button:focus,
   text-align: right;
 }
 .logo-name:before {
-  content: url("/img/logo-mini.png");
+  content: url("../img/logo-mini.png");
   margin-right: 10px;
   margin-bottom: -20px;
 }
