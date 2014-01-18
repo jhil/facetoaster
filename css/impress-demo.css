@@ -54,7 +54,7 @@ table {
 
 .fallback-message {
     font-family: sans-serif;
-    line-height: 1.3;
+    line-height: 1.4;
 
     width: 780px;
     padding: 10px 10px 0;
@@ -103,7 +103,7 @@ table {
 */
 .impress-enabled .step {
     margin: 0;
-    opacity: 0.3;
+    opacity: 0.1;
 
     -webkit-transition: opacity 1s;
     -moz-transition:    opacity 1s;
@@ -547,9 +547,9 @@ table {
 .impress-enabled .hint { display: block }
 
 /*
-    ... and we will show it when the first step (with id 'bored') is active.
+    ... and we will show it when the first step (with id 'slide1') is active.
 */
-.impress-on-bored .hint {
+.impress-on-slide1 .hint {
     /*
         We remove the transparency and position the hint in its default fixed
         position.
