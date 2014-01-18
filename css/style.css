@@ -5,6 +5,9 @@
 .center {
   text-align: center;
 }
+.caps {
+  text-transform: uppercase;
+}
 /* RESETS */
 * {
   margin: 0;
@@ -91,6 +94,7 @@ h3,
   bottom: 60px;
   left: 60px;
   text-align: left;
+  text-transform: uppercase;
 }
 /* SCROLL BLOCK */
 .scroll-block {
