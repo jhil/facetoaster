@@ -18,7 +18,7 @@ $(document).ready(function () {
 				
 				$('.version-text').text("V" + index);
 				
-				$('.version-text').fadeIn(500);
+				$('.version-text').fadeIn(300);
 		}, 500)
 
 	});
