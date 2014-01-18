@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700);
+/*IMPORT FONTS*/
+/* COLORS */
+/* MIXINS */
+.center {
+  text-align: center;
+}
+/* RESETS */
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+/* BODY */
+body {
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: #999999;
+  font-size: .875em;
+  line-height: 1.4;
+  margin-top: 0;
+  text-align: center;
+}
+/* TYPOGRAPHY */
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+}
+h1,
+.h1 {
+  font-weight: 700;
+  font-size: 1.25em;
+  margin-bottom: .125em;
+}
+h2,
+.h2 {
+  font-weight: 300;
+  font-size: 1.25em;
+  margin-bottom: .125em;
+}
+h3,
+.h3 {
+  font-weight: 300;
+  color: #cccccc;
+}
+.version-text {
+  font-size: .875em;
+  color: #cccccc;
+}
+/* FRAME + SLIDES */
+.frame {
+  position: absolute;
+  display: block;
+  height: 636px;
+  width: 300px;
+  z-index: 1000;
+  margin-top: -318px;
+  margin-left: -150px;
+  top: 50%;
+  left: 50%;
+  overflow: visible;
+  background: url("/img/frame-iphone-trans.png");
+}
+.slides {
+  position: relative;
+  top: 60px;
+  left: 15px;
+  display: block;
+  overflow: visible;
+}
+.slides ul li {
+  margin-right: 60px;
+  float: left;
+}
+/* DESCRIPTION */
+.description {
+  text-align: right;
+  width: 140px;
+}
+.header-text {
+  margin: 15px 0;
+}
+/* SCROLL BLOCK */
+.scroll-block {
+  display: block;
+  height: 4em;
+}
+.scroll-block ul {
+  position: relative;
+  display: inline-block;
+}
+.top {
+  margin-top: 1em;
+}
+.top ul {
+  bottom: 0;
+}
+.bottom {
+  bottom: 0;
+  margin-bottom: 1em;
+}
+.bottom ul {
+  top: 0;
+}
+.scroll-views li {
+  font-weight: 300;
+  color: #cccccc;
+}
+.scroll-views li:before {
+  content: "+ ";
+}
+.arrow img {
+  display: block;
+  margin: .5em;
+}
+/* TEMP */
+.logo {
+  position: absolute;
+  height: 205px;
+  width: 170px;
+  margin-left: -85px;
+  margin-top: -100px;
+  top: 50%;
+  left: 50%;
+}
+/* SELECTION HIGHLIGHT */
+::selection {
+  background: #39414c;
+  /* Safari */
+  color: white;
+}
+::-moz-selection {
+  background: #39414c;
+  /* Firefox */
+  color: white;
+}
