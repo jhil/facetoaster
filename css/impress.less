@@ -82,7 +82,6 @@ table {
     .step {
         position: relative;
         width: 440px;
-        padding: 40px;
         margin: 20px auto;
 
         -webkit-box-sizing: border-box;
@@ -91,7 +90,7 @@ table {
         -o-box-sizing:      border-box;
         box-sizing:         border-box;
 
-        font-family: 'PT Serif', georgia, serif;
+        font-family: @sans;
         font-size: 48px;
         line-height: 1.5;
     }
@@ -103,7 +102,7 @@ table {
     */
     .impress-enabled .step {
         margin: 0;
-        opacity: 0.2;
+        opacity: 0.05;
 
         -webkit-transition: opacity .4s;
         -moz-transition:    opacity .4s;
@@ -112,7 +111,12 @@ table {
         transition:         opacity .4s;
     }
 
-    .impress-enabled .step.active { opacity: 1 }
+    .impress-enabled .step.active {
+        opacity: 1;
+        &:hover {
+            opacity: 1;
+        }
+    }
 
 /*
     These 'slide' step styles were heavily inspired by HTML5 Slides:
@@ -128,11 +132,12 @@ table {
 
         width: 261px;
         height: 455px;
-        padding: 40px 60px;
-
-        background: @blue;
 
         font-family: Arial, sans-serif;
+
+        &:hover {
+            opacity: .8;
+        }
     }
 
     .slide q {
