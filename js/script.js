@@ -24,6 +24,7 @@ $(document).ready(function () {
 			if(e.keyCode == 37 || e.keyCode == 38 || e.keyCode == 39 || e.keyCode == 40) {
 				index = $("#impress div").index($(".present"));
 				$('.version-text').text("V" + index);
+
 				$('.version-text').fadeIn(500);
 			}
 				
