@@ -17,6 +17,10 @@
 	text-align: center;
 }
 
+.caps {
+	text-transform: uppercase;
+}
+
 
 /* RESETS */
 
@@ -106,7 +110,9 @@ h3, .h3 {
 	text-align: right;
 
 	&:before {
-		content: url("/img/logo-mini.png")
+		content: url("/img/logo-mini.png");
+		margin-right: 10px;
+		margin-bottom: -20px;
 	}
 }
 
@@ -119,6 +125,7 @@ h3, .h3 {
 	bottom: 60px;
 	left: 60px;
 	text-align: left;
+	.caps;
 }
 
 /* SCROLL BLOCK */
@@ -180,7 +187,7 @@ h3, .h3 {
 ::selection {
 	background: @blue; /* Safari */
 	color: white;
-	}
+}
 ::-moz-selection {
 	background: @blue; /* Firefox */
 	color: white;
