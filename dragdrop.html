@@ -5,27 +5,43 @@
     <meta charset="utf-8" />
     <!-- <meta name="viewport" content="width=1280" /> -->
     <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
-    <title>Facetoaster</title>
+    <title>Create - Facetoaster</title>
 
     <link rel="icon" type="image/png" href="favicon.png" />
     
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="css/dropzone.css">
+    <link href="css/dropzone.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <body>
 
-<div class="title">
-    <h1>facetoaster</h1>
-</div>
+    <div class="logo">
+        <img src="img/logo.png">
+    </div>
 
+    <form><input type="text" name="project" placeholder="Project Name"></form>
+
+    <form action="file-upload.php" class="dropzone">
+        <div class="dz-default dz-message"><span class="h1">Drop your screens here!</span></div>
+        <div class="fallback">
+            <input name="file" type="file" multiple />
+        </div>
+    </form>
+
+    <form><input class="button" type="submit" value="continue"></form>
+
+
+
+<<<<<<< HEAD
 <form action="file-upload.php" method="post" class="dropzone">
   <div class="fallback">
     <input name="file" type="file" multiple />
   </div>
 </form>
+=======
+>>>>>>> da0e9b4ecdc149627d67fa1c8b2c022d737fb05e
     <script src="./js/dropzone.js"></script>
+
 </body>
 </html>
