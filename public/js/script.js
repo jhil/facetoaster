@@ -37,7 +37,7 @@ $(document).ready(function () {
 
 	});
 
-	$('.frame').dblclick(function() {
+	$('.frame').click(function() {
 		$('.frame').toggleClass("night");
 		$('.night-mode').toggleClass("invisible");
 		$('.day-mode').toggleClass("invisible")
