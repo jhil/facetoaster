@@ -24,14 +24,14 @@
         <input type="text" name="project" placeholder="Screen"/>
     </form>
 
-    <form action="/upload" class="dropzone">
+    <form action="/upload" class="dropzone" method='POST'>
         <div class="dz-default dz-message"><span class="h1">Drop your screens here!</span></div>
         <div class="fallback">
             <input name="file" type="file" multiple />
         </div>
     </form>
 
-    <form><input class="button" type="submit" value="continue"></form>
+    <form><input class="button" type="submit" value="continue" /></form>
 
     <script src="public/js/dropzone.js"></script>
 
