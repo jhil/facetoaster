@@ -43,6 +43,11 @@ li {
 
     Basically we remove the margin and make inactive steps a little bit transparent.
     */
+
+.invisible {
+  display: none;
+}
+
 .impress-enabled .step {
   margin: 0;
   opacity: 0.05;
