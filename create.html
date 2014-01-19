@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta name="viewport" content="width=1280" /> -->
+    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
+    <title>Create - Facetoaster</title>
+
+    <link rel="icon" type="image/png" href="favicon.png" />
+    
+    <link href="public/css/style.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+</head>
+
+<body>
+    <div class="logo">
+        <img src="public/img/logo.png">
+    </div>
+
+    <form>
+        <input type="text" name="project" placeholder="Project"/>
+        <input type="text" name="project" placeholder="Screen"/>
+    </form>
+
+    <form action="/upload" class="dropzone" method='POST'>
+        <div class="dz-default dz-message"><span class="h1">Drop your screens here!</span></div>
+        <div class="fallback">
+            <input name="file" type="file" multiple />
+        </div>
+    </form>
+
+<!--     <form><input class="button" type="submit" value="continue" /></form>
+ -->
+
+     <a href="index.html"><button>continue</button></a>
+
+    <script src="public/js/dropzone.js"></script>
+
+</body>
+</html>

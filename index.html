@@ -1,41 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <!-- <meta name="viewport" content="width=1280" /> -->
-    <!-- <meta name="apple-mobile-web-app-capable" content="yes" /> -->
-    <title>Create - Facetoaster</title>
+    <title>Hotdrop - Facetoaster</title>
 
     <link rel="icon" type="image/png" href="favicon.png" />
     
     <link href="public/css/style.css" rel="stylesheet" />
+
+    <meta name="description" content="Facetoaster. Created at MHacks 2014" />
+    <meta name="author" content="Jeff Hilnbrand, Jaren Glover, Luis Santos" />
+    
     <link rel="shortcut icon" href="favicon.png" />
 </head>
 
 <body>
-    <div class="logo">
-        <img src="public/img/logo.png">
+
+    <!-- FRAME + DESCRIPTION -->
+
+    <div class="frame">
+        <div class="description">
+            <h1>Hotdrop</h1>
+            <h2>Feed <span class="version-text">V1</span></h2>
+            <p class="description-text">First iteration. Need to work the menu.</p>
+        </div>
     </div>
 
-    <form>
-        <input type="text" name="project" placeholder="Project"/>
-        <input type="text" name="project" placeholder="Screen"/>
-    </form>
 
-    <form action="/upload" class="dropzone" method='POST'>
-        <div class="dz-default dz-message"><span class="h1">Drop your screens here!</span></div>
-        <div class="fallback">
-            <input name="file" type="file" multiple />
+    <!-- SLIDES -->
+
+    <div id="impress">
+        
+        <div class="step slide" data-y="-1500" description="Banksy fashion axe mixtape Odd Future photo booth lomo fanny pack typewriter readymade, PBR&B Cosby sweater retro Marfa. Forage banjo farm-to-table, selfies street art drinking vinegar Tonx cornhole Schlitz. Shabby chic single-origin coffee ugh tofu meh umami.">
+            <img src="public/img/screen1.png">
         </div>
-    </form>
 
-<!--     <form><input class="button" type="submit" value="continue" /></form>
- -->
+        <div class="step slide" data-y="-1500" description="Cred Odd Future messenger bag, art party sustainable polaroid organic narwhal post-ironic umami selfies beard skateboard. Actually iPhone kale chips Tumblr, disrupt kitsch tofu bicycle rights before they sold out Wes Anderson jean shorts.">
+            <img src="public/img/screen2.png">
+        </div>
 
-     <a href="project.html"><button>continue</button></a>
+        <div class="step slide" data-y="-1500" description="Raw denim Echo Park semiotics, church-key slow-carb hoodie Schlitz farm-to-table forage tattooed authentic Odd Future Neutra Shoreditch kale chips. Tattooed plaid Neutra PBR art party Brooklyn.">
+            <img src="public/img/screen3.png">
+        </div>
 
-    <script src="public/js/dropzone.js"></script>
+        <div class="step slide" data-y="-1500" description="Forage Intelligentsia sriracha, Etsy stumptown Thundercats keffiyeh paleo master cleanse. Forage Intelligentsia single-origin coffee small batch messenger bag McSweeney's. Readymade cliche squid, master cleanse Tumblr Neutra small batch +1.">
+            <img src="public/img/screen4.png">
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <div class="info-bottom-left">
+        <p>Right = Newer / Left = Older</p>
+        <p>Double click frame for <span class="night-mode">night mode</span><span class="day-mode invisible">light mode</span></p>
+    </div>
+
+    <div class="info-bottom-right">
+        <h2 class="logo-name">Facetoaster</h2>
+        <p><a href="https://twitter.com/_lssr" target="_blank">Luis Santos</a> x <a href="https://twitter.com/GloveDotCom" target="_blank">Jaren Glover</a> x <a href="https://twitter.com/jhilmd" target="_blank">Jeff Hilnbrand</a> @ <a href="https://mhacks.org" target="_blank">MHacks 2014</a></p>
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script>
+            if ("ontouchstart" in document.documentElement) { 
+                document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+            }
+
+    </script>
+
+    <script src="public/js/impress.js"></script>
+    <script>
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="public/js/script.js"></script>
 
 </body>
 </html>
