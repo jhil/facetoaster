@@ -245,9 +245,7 @@ li {
 
     So use it wisely ... or don't use at all.
     */
-.impress-enabled {
-  pointer-events: none;
-}
+
 .impress-enabled #impress {
   pointer-events: auto;
 }
