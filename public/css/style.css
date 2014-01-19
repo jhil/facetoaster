@@ -43,11 +43,6 @@ li {
 
     Basically we remove the margin and make inactive steps a little bit transparent.
     */
-
-.invisible {
-  display: none;
-}
-
 .impress-enabled .step {
   margin: 0;
   opacity: 0.05;
@@ -250,9 +245,9 @@ li {
 
     So use it wisely ... or don't use at all.
     */
-/*.impress-enabled {
+.impress-enabled {
   pointer-events: none;
-}*/
+}
 .impress-enabled #impress {
   pointer-events: auto;
 }
@@ -343,6 +338,15 @@ button:focus,
 .button:focus {
   border: 0;
   outline: 0;
+}
+/* IMAGES */
+img {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 /* FRAME + SLIDES */
 .frame {
