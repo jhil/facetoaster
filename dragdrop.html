@@ -10,7 +10,6 @@
     <link rel="icon" type="image/png" href="favicon.png" />
     
     <link href="public/css/style.css" rel="stylesheet" />
-    <link href="public/css/dropzone.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.png" />
 </head>
 
@@ -20,7 +19,10 @@
         <img src="public/img/logo.png">
     </div>
 
-    <form><input type="text" name="project" placeholder="Project Name"></form>
+    <form>
+        <input type="text" name="project" placeholder="Project"/>
+        <input type="text" name="project" placeholder="Screen"/>
+    </form>
 
     <form action="/upload" class="dropzone">
         <div class="dz-default dz-message"><span class="h1">Drop your screens here!</span></div>
