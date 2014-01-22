@@ -43,5 +43,7 @@ $(document).ready(function () {
 		$('.day-mode').toggleClass("invisible")
 	})
 
-	impress().init(); 
+	impress().init();
+
+
 })
